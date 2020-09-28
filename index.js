@@ -58,6 +58,7 @@ class SendOtp {
         let args = {
                 authkey: this.authKey,
                 mobile: contactNumber,
+                country: String(contactNumber).startsWith('91') ? 91 : 0,
                 sender: senderId,
                 message: this.messageTemplate.replace('{{otp}}', otp),
                 otp: otp,
