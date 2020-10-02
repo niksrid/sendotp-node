@@ -78,10 +78,7 @@ class SendSmsService {
   async sendSMSFlow(aMobileNumber, aFlowId, aParams) {
     return new Promise(async (resolve, reject) => {
       try {
-        if (!aParams) {
-          aParams = {}
-        }
-
+        aParams = {recipients: aParams}
         aParams.authkey = this.authKey
         aParams.flow_id = aFlowId
         aParams.template_id = aFlowId
