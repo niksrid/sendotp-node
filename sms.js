@@ -96,8 +96,8 @@ class SendSmsService {
           },
           body: aParams
         }
-        const response = await performRequest(options)
-        handleResponse(response, resolve, reject)
+        const response = await this.performRequest(options)
+        this.handleResponse(response, resolve, reject)
       } catch (error) {
         reject(error)
       }
@@ -167,8 +167,8 @@ class SendSmsService {
           body
         }
 
-        const response = await performRequest(options)
-        handleResponse(response, resolve, reject)
+        const response = await this.performRequest(options)
+        this.handleResponse(response, resolve, reject)
       } catch (error) {
         reject(error)
       }
