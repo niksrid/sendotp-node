@@ -4,10 +4,10 @@ class SendSmsService {
   /**
    * @param {String} aAuthKey Authentication key
    */
-  constructor(aAuthKey, aSenderId, aRouteId) {
+  constructor(aAuthKey, aSenderId) {
     this.authKey = aAuthKey
     this.senderId = aSenderId
-    this.routeId = aRouteId
+    // this.routeId = aRouteId
   }
 
   /**
