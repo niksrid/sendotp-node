@@ -94,6 +94,10 @@ class SendSmsService {
           },
           body: aParams
         }
+
+         // test
+         console.log(options);
+
         const response = await this.performRequest(options)
         this.handleResponse(response, resolve, reject)
       } catch (error) {
