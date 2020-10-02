@@ -88,7 +88,8 @@ class SendSmsService {
           hostname: 'api.msg91.com',
           port: null,
           path: '/api/v5/flow/?response=json',
-          headers: {
+          headers: {,
+            "authkey": this.authKey,
             'content-type': 'application/json'
           },
           body: aParams
