@@ -1,6 +1,7 @@
 "use strict";
 
 let request = require('request');
+const SendSmsService = require('./sms');
 
 class SendOtp {
 
@@ -177,4 +178,5 @@ class SendOtp {
 
 }
 
-module.exports = SendOtp;
+
+module.exports = SendOtp, SendSmsService;
