@@ -85,6 +85,7 @@ class SendSmsService {
         aParams.authkey = this.authKey
         aParams.mobiles = aMobileNumber
         aParams.flow_id = aFlowId
+        aParams.template_id = aFlowId
 
         const options = {
           method: 'POST',
