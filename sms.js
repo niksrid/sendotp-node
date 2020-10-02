@@ -80,7 +80,7 @@ class SendSmsService {
       try {
         aParams = {recipients: aParams}
         aParams.flow_id = aFlowId
-
+        aParams.sender = this.senderId;
         const options = {
           method: 'POST',
           hostname: 'api.msg91.com',
