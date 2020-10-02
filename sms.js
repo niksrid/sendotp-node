@@ -79,9 +79,7 @@ class SendSmsService {
     return new Promise(async (resolve, reject) => {
       try {
         aParams = {recipients: aParams, mobiles:aMobileNumber}
-        aParams.authkey = this.authKey
         aParams.flow_id = aFlowId
-        aParams.template_id = aFlowId
 
         const options = {
           method: 'POST',
