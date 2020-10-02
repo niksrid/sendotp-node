@@ -179,4 +179,4 @@ class SendOtp {
 }
 
 
-module.exports = SendOtp, SendSmsService;
+module.exports = {SendOtp, SendSmsService};
