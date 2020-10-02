@@ -83,7 +83,7 @@ class SendSmsService {
         }
 
         aParams.authkey = this.authKey
-        aParams.sender_id = this.senderId;        
+        aParams.sender = this.senderId;        
         aParams.flow_id = aFlowId
         aParams.template_id = aFlowId
 
